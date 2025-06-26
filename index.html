@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abyssinia House</title>
+  <link rel="stylesheet" href="ss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   <header>
+     <div class="logo">Abyssinia House</div>
+
+     
+     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+     <nav id="nav-links">
+       <a href="#about">About</a>
+       <a href="#us">Why Us</a>
+       <a href="#menu">Menu</a>
+       <a href="#review">Review</a>
+       <a href="#blog">Blog</a>
+       <a href="#contact">Contact</a>
+     </nav>
+    </header>
+
+
+     <section class="hero">
+      <div class="hh">
+        <div>
+          <h1> <em>Traditional Brewed Modern <br>
+            Sip, Savor, Go Green!</em></h1> <hr>
+          <p>Savor the soul of Ethiopia in every sip-crafted for today's pace with sustainably packaged coffee & juices, because tradition tastes better when it's as fresh as your next break.</p>
+        </div>
+      </div>
+      </section>
+    
+    
+    <section class="about" id="about">
+       <div>
+          <h2>About Us</h2>
+          <p>At Abyssinia House, we bring the soul of Ethiopia to the rhythm of modern life. Rooted in the warmth of traditional coffee ceremonies and the vibrancy of local customs, our café is where heritage meets innovation. Whether you're sipping a rich buna brewed with reverence or enjoying a refreshing juice made from indigenous fruits, every experience is a tribute to Ethiopia’s flavors—reimagined for today. <br>
+             We celebrate cultural authenticity with a fresh perspective—think classic woven décor alongside sleek finishes, and age-old hospitality served in eco-friendly to-go cups. Our space is designed to be as flexible as it is inviting, perfect for those who want to linger or simply grab and go. <br>
+             More than just a coffee and juice house, Abyssinia House is a daily ritual, a cultural experience, and a modern convenience—wrapped in sustainability and served with pride.</p>
+       </div>
+        <img src="buna.jpg" alt="coffee maddness">
+    </section>
+
+    <section class="whyus" id="us">
+
+        <h2>Why Choose Us</h2>
+        <div class="us">
+           <div>
+             <i class="fas fa-coffee"></i> 
+             <p>Combining traditional and modern tastes</p>
+           </div>
+           <div>
+             <i class="fas fa-home"></i>
+             <p>Use high-quality local ingredients</p>
+           </div>
+           <div>
+              <i class="fas fa-leaf"></i>
+              <p>Environmentally friendly practices</p>
+           </div>
+        </div>
+       
+    </section>
+
+  <section class="menu" id="menu">
+  
+      <h2>Menu</h2>
+
+      <div class="menu-category" id="cold-coffee">
+        <h3>Cold Coffee</h3>
+        <div class="menu-grid">
+          <div class="menu-item"> <img src="cold-mocha.jpg" alt="Cold Mocha" /><p>Cold Mocha</p></div>
+          <div class="menu-item"> <img src="americano.jpg" alt="Americano" /><p>Americano</p></div>
+          <div class="menu-item"> <img src="caramel-macchiato.jpg" alt="Caramel Macchiato" /><p>Caramel Macchiato</p></div>
+          <div class="menu-item"> <img src="wh.jpg" alt="White Chocolate Mocha" /><p>White Chocolate Mocha</p></div>
+
+          <div class="menu-item hidden-items" style="display:none;"> <img src="il.jpg" alt="Iced Latte" /><p>Iced Latte</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="cold-brew.jpg" alt="Cold Brew" /><p>Cold Brew</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="americano.jpg" alt="Iced Americano" /><p>Iced Americano</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="cold-foam.jpg" alt="Cold Foam" /><p>Cold Foam</p></div>
+        </div>
+        <button class="more-button" onclick="toggleMore(this)">More</button>
+      </div>
+
+      <div class="menu-category" id="hot-coffee">
+        <h3>Hot Coffee</h3>
+        <div class="menu-grid">
+          <div class="menu-item"> <img src="cappuccino.jpg" alt="Cappuccino" /><p>Cappuccino</p></div>
+          <div class="menu-item"> <img src="ethio-coffee.jpg" alt="Traditional Coffee" /><p>Traditional Coffee</p></div>
+          <div class="menu-item"> <img src="cinnamon-coffee.jpg" alt="Cinnamon Coffee" /><p>Cinnamon Coffee</p></div>
+          <div class="menu-item"> <img src="espresso.jpg" alt="Espresso" /><p>Espresso</p></div>
+
+          <div class="menu-item hidden-items" style="display:none;"> <img src="caramel-vanilla-latte.jpg" alt="Vanilla Caramel Latte" /><p>Vanilla Caramel Latte</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="flat-white.jpg" alt="Flat White" /><p>Flat White</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="mocha.jpg" alt="Mocha" /><p>Mocha</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="latte.jpg" alt="Latte" /><p>Latte</p></div>
+        </div>
+        <button class="more-button" onclick="toggleMore(this)">More</button>
+      </div>
+
+      <div class="menu-category" id="juice">
+        <h3>Juice</h3>
+        <div class="menu-grid">
+          <div class="menu-item"> <img src="orangej.jpg" alt="Orange" /><p>Orange</p></div>
+          <div class="menu-item"> <img src="pineapplej.jpg" alt="Pineapple" /><p>Pineapple</p></div>
+          <div class="menu-item"> <img src="avocadoj.jpg" alt="Avocado" /><p>Avocado</p></div>
+          <div class="menu-item"> <img src="watermelonj.jpg" alt="Watermelon" /><p>Watermelon</p></div>
+
+          <div class="menu-item hidden-items" style="display:none;"> <img src="mangoj.jpg" alt="Mango" /><p>Mango</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="applej.jpg" alt="Apple" /><p>Apple</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="guavaj.jpg" alt="Guava" /><p>Guava</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="cranberryj.jpg" alt="Cranberry" /><p>Cranberry</p></div>
+        </div>
+        <button class="more-button" onclick="toggleMore(this)">More</button>
+      </div>
+
+      <div class="menu-category" id="smoothie">
+        <h3>Smoothie</h3>
+        <div class="menu-grid">
+         <div class="menu-item"> <img src="sks.jpg" alt="Strawberry Kiwi Smoothie" /><p>Strawberry Kiwi</p></div>
+         <div class="menu-item"> <img src="as.jpg" alt="Avocado Smoothie" /><p>Avocado</p></div>
+         <div class="menu-item"> <img src="bbs.jpg" alt="Blueberry Smoothie" /><p>Blueberry Banana</p></div>
+         <div class="menu-item"> <img src="mango-smoothie.jpg" alt="Mango Smoothie" /><p>Mango Smoothie</p></div>
+
+         <div class="menu-item hidden-items" style="display:none;"> <img src="peach-smoothie.jpg" alt="Peach Smoothie" /><p>Peach Smoothie</p></div>
+         <div class="menu-item hidden-items" style="display:none;"> <img src="banana-smoothie.jpg" alt="Banana Smoothie" /><p>Banana Smoothie</p></div>
+         <div class="menu-item hidden-items" style="display:none;"> <img src="green-smoothie.jpg" alt="Green Smoothie" /><p>Green Smoothie</p></div>
+         <div class="menu-item hidden-items" style="display:none;"> <img src="berry-smoothie.jpg" alt="Berry Smoothie" /><p>Berry Smoothie</p></div>
+        </div>
+        <button class="more-button" onclick="toggleMore(this)">More</button>
+      </div>
+
+      <div class="menu-category" id="snacks">
+        <h3>Snacks</h3>
+        <div class="menu-grid">
+          <div class="menu-item"> <img src="sandwich.jpg" alt="Sandwich" /><p>Sandwich</p></div>
+          <div class="menu-item"> <img src="fries.jpg" alt="French Fries" /><p>French Fries</p></div>
+          <div class="menu-item"> <img src="samubusa.jpg" alt="Sambusas" /><p>Sambusas</p></div>
+          <div class="menu-item"> <img src="cheese-sticks.jpg" alt="Cheese Sticks" /><p>Cheese Sticks</p></div>
+
+          <div class="menu-item hidden-items" style="display:none;"> <img src="onion-rings.jpg" alt="Onion Rings" /><p>Onion Rings</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="chicken-wings.jpg" alt="Chicken Wings" /><p>Chicken Wings</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="mozarella-sticks.jpg" alt="Mozarella Sticks" /><p>Mozarella Sticks</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="potato-wedges.jpg" alt="Potato Wedges" /><p>Potato Wedges</p></div>
+        </div>
+        <button class="more-button" onclick="toggleMore(this)">More</button>
+      </div>
+
+      <div class="menu-category" id="dessert">
+        <h3>Dessert</h3>
+        <div class="menu-grid">
+          <div class="menu-item"> <img src="cheese.jpg" alt="Cheesecake" /><p>Cheesecake</p></div>
+          <div class="menu-item"> <img src="cross.jpg" alt="Croissant" /><p>Croissant</p></div>
+          <div class="menu-item"> <img src="cupcake.jpg" alt="Cupcakes" /><p>Cupcakes</p></div>
+          <div class="menu-item"> <img src="revvelvet.jpg" alt="Red Velvet Cake" /><p>Red Velvet Cake</p></div>
+
+          <div class="menu-item hidden-items" style="display:none;"> <img src="chocolate-mousse.jpg" alt="Chocolate Mousse" /><p>Chocolate Mousse</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="ice-cream.jpg" alt="Ice Cream" /><p>Ice Cream</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="tiramisu.jpg" alt="Tiramisu" /><p>Tiramisu</p></div>
+          <div class="menu-item hidden-items" style="display:none;"> <img src="fruit-tart.jpg" alt="Fruit Tart" /><p>Fruit Tart</p></div>
+        </div>
+        <button class="more-button" onclick="toggleMore(this)">More</button>
+      </div>
+  </section>
+
+  <div class="popup" id="orderPopup">
+    <div class="popup-content" id="popupContent"></div>
+  </div>
+
+  <section id="review">
+    <h2>Customer Review</h2>
+    <div class="review">
+      <div class="review-card">
+        <img src="manone.jpg" alt="man">
+        <h3>Michael S.</h3>
+        <p>The menu is full of nutritious choices, and the cozy vibe makes it my favorite weekend hangout.</p>
+      </div>
+      <div class="review-card">
+        <img src="girl.jpg" alt="girl">
+        <h3>Emily R.</h3>
+        <p>A perfect morning spot! I grab my iced coffee and orange juice from Abyssinia House every morning before work. Highly recommended!</p>
+      </div>
+      <div class="review-card">
+        <img src="mantwo.jpg" alt="man">
+        <h3>David T.</h3>
+        <p>Stumbled upon this place while exploring the city—amazing find. Super friendly staff too.</p>
+      </div>
+    </div>
+
+    <h2>Leave a Review</h2>
+    <form class="review-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Review Title" required>
+      <textarea placeholder="Write your review..." rows="4" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  
+  <section id="blog">
+    <h2>Our Recent Blog</h2>
+
+    <div class="blog">
+      <div class="blog-card">
+        <img src="juice-n-coffee.jpg" alt="juice and coffee">
+        <p>The Sweet Power of Plants: <br> Unveiling the Benefits of a Fruit-Based Diet</p>
+      </div>
+      <div class="blog-card">
+        <img src="coffeeworld.jpg" alt="coffee cup">
+        <p>Why should you care about the type <br> of coffee you consume...</p>
+      </div>
+      <div class="blog-card">
+        <img src="variety.jpg" alt="drinks">
+        <p>What is new in Abyssinia?...</p>
+      </div>
+      <div class="blog-card">
+        <img src="flying-coffee.jpg" alt="coffee bean">
+        <p>Different types of coffee beans give different <br> taste when brewed.</p>
+      </div>
+    </div>
+
+    <div class="center-screen">
+      <a href="blogs.html" target="_blank" class="bubble-button">Read More</a>
+    </div>
+  </section>
+
+ 
+<section id="contact" class="contact-section">
+  <h3>Contact Us</h3>
+  <div class="contact-info">
+    <div class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <p>Email: <a href="mailto:info@abyssiniahouse.com">info@abyssiniahouse.com</a></p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-phone"></i>
+      <p>Call: <a href="tel:+251900000000">+251 900 000 000</a></p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Addis Ababa, Ethiopia</p>
+    </div>
+  </div>
+
+
+  <div class="socials">
+    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.telegram.com"><i class="fab fa-telegram"></i></a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="#about">About</a>
+    <a href="#us">Why Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#review">Reviews</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p>&copy; 2025 Abyssinia House. All rights reserved.</p>
+</footer>
+
+
+  <script>
+
+     function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("show");
+  }
+  function toggleMore(btn) {
+    const category = btn.previousElementSibling;
+    const hiddenItems = category.querySelectorAll('.hidden-items');
+    hiddenItems.forEach(item => {
+      item.style.display = (item.style.display === 'block') ? 'none' : 'block';
+    });
+    btn.textContent = btn.textContent === 'More' ? 'Less' : 'More';
+  }
+
+  const steps = [
+    { name: 'Option', label: 'Choose Option', choices: ['In-House', 'To-Go'] },
+    { name: 'Size', label: 'Choose Size', choices: ['Small', 'Medium', 'Large'] },
+    { name: 'Payment', label: 'Payment Method', choices: ['Cash', 'Card', 'Telebirr', 'CBE Mobile Banking', 'Abyssinia Bank Mobile', 'Dashen Bank Mobile'] },
+    { name: 'Pickup', label: 'Pickup or Delivery', choices: ['Pickup', 'Delivery'], condition: (data) => data.Option === 'To-Go' },
+    { name: 'Quantity', label: 'Quantity', choices: ['1', '2', '3', '4', '5'] },
+    { name: 'Confirmation', label: 'Confirmation', choices: ['Confirm Order'] }
+  ];
+
+  let currentStep = 0;
+  let orderData = {};
+  let selectedItem = '';
+  let orders = [];
+
+  function startOrder(itemName) {
+    selectedItem = itemName;
+    orderData = {};
+    currentStep = 0;
+    showPopup();
+    renderStep();
+  }
+
+  function showPopup() {
+    document.getElementById('orderPopup').classList.add('show');
+  }
+
+  function closePopup() {
+    document.getElementById('orderPopup').classList.remove('show');
+  }
+
+  function renderStep() {
+    while (currentStep < steps.length) {
+      const step = steps[currentStep];
+      if (step.condition && !step.condition(orderData)) {
+        currentStep++;
+      } else {
+        break;
+      }
+    }
+    if (currentStep >= steps.length) {
+      renderSummary();
+      return;
+    }
+    const step = steps[currentStep];
+    const content = document.getElementById('popupContent');
+    content.innerHTML = `<h3>${step.label}</h3>` +
+      step.choices.map(choice =>
+        `<button onclick="nextStep('${choice}')">${choice}</button>`
+      ).join('') +
+      `<br><br><button onclick="closePopup()">Cancel</button>`;
+  }
+
+  function nextStep(choice) {
+    const step = steps[currentStep];
+    orderData[step.name] = choice;
+    currentStep++;
+    if (currentStep < steps.length) {
+      renderStep();
+    } else {
+      addOrder();
+      renderSummary();
+    }
+  }
+
+  function addOrder() {
+    const order = {
+      item: selectedItem,
+      option: orderData.Option || '',
+      size: orderData.Size || '',
+      payment: orderData.Payment || '',
+      pickup: orderData.Pickup || '',
+      quantity: orderData.Quantity || '1'
+    };
+    orders.push(order);
+  }
+
+  function renderSummary() {
+    const content = document.getElementById('popupContent');
+    let html = `<h3>Order Summary</h3>`;
+    if (orders.length === 0) {
+      html += `<p>No orders yet.</p>`;
+    } else {
+      orders.forEach((o, i) => {
+        html += `<p><strong>Order ${i + 1}:</strong> ${o.quantity} x ${o.item} (${o.option}, Size: ${o.size}, Payment: ${o.payment}`;
+        if(o.option === 'To-Go') {
+          html += `, ${o.pickup}`;
+        }
+        html += `)</p>`;
+      });
+      html += `<button onclick="confirmOrders()">Confirm All Orders</button>`;
+    }
+    html += `<br><button onclick="closePopup()">Close</button>`;
+    content.innerHTML = html;
+  }
+
+  function confirmOrders() {
+    alert(`Orders confirmed!\n${orders.map((o,i) => `#${i+1}: ${o.quantity} x ${o.item}`).join('\n')}`);
+    orders = [];
+    closePopup();
+  }
+
+  document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', () => {
+      startOrder(item.querySelector('p').textContent);
+    });
+  });
+</script>
+
+</body>
+</html>

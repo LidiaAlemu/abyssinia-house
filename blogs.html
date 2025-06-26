@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
+    background-color: burlywood;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  header {
+    color: black;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+  }
+  nav a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px 50px;
+    background-image: url(cocf.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-blend-mode: overlay;
+    background-repeat: no-repeat; 
+    color: white;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;  
+  }
+  .hero h1 {
+  font-size: 48px; 
+  font-weight: bold;
+  color: #f8f8f2;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6; 
+  color: #f8f8f2;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+
+  .hh {
+   align-self: flex-start;
+    top: 100px;         
+    left: 50px;          
+    max-width: 700px;     
+    color: white;       
+    z-index: 10; 
+  }
+.hh hr {
+  border: none;
+  border-top: 2px solid white; 
+  width: 100px;                 
+}
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 60px;
+}
+
+.bubble-button {
+  background-color: #5c3d2e;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.bubble-button:hover {
+  background-color: #3d2b1f;
+  transform: scale(1.05);
+}
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fff8f0;
+}
+
+#blog {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #a9744f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #5c3d2e;
+}
+
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+
+.blog-card {
+  background-color: #deb887;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+
+.blog-card.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Proportional Image */
+.blog-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.blog-card h3 {
+  font-size: 1.2rem;
+  color: #4b2e1c;
+  margin: 10px 0 6px;
+}
+
+.blog-card p {
+  color: #2f1c0f;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  padding: 0 5px;
+}
+
+
+
+.center-screen {
+  margin-top: auto;
+}
+
+.bubble-button {
+  background-color: #5c3d2e;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.bubble-button:hover {
+  background-color: #3e2618;
+}
+
+
+
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #fff8f0;
+  text-align: center;
+}
+
+.contact-section h3 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #5c3d2e;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.contact-card {
+  background-color: rgba(92, 61, 46, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-card i {
+  font-size: 1.5rem;
+  color: #5c3d2e;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+
+.contact-card a {
+  color: #3d2b1f;
+  text-decoration: none;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a i {
+  font-size: 24px;
+  color: #5c3d2e;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover i {
+  transform: scale(1.2);
+}
+
+
+.site-footer {
+  background-color: #deb887e0;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #3d2b1f;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #5c3d2e;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+  color: #3d2b1f;
+}
+@media (max-width: 600px) {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; 
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color:burlywood;
+    margin-top: 10px;
+  }
+
+  nav a {
+    padding: 12px;
+    border-top: 1px solid #fff2;
+  }
+
+  nav.show {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .bubble-button {
+    width: auto;
+    font-size: 1rem;
+  }
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+     <div class="logo">Abyssinia House</div>
+
+     
+     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+     <nav id="nav-links">
+       <a href="#featured">Featured</a>
+       <a href="#blog">Blogs</a>
+       <a href="#contact">Contact</a>
+     </nav>
+    </header>
+
+   <section class="hero" id="featured">
+    <div class="hh">
+      <h6>Featured</h6>
+      <h1><em>Sips of Heritage: Exploring Traditional Ethiopian Flavors in Modern Beverages</em></h1> <hr>
+      <p>In Ethiopia, coffee isn't just a drink—it’s a ritual, a legacy, a language of hospitality that resonates through generations.</p>
+      <div class="center-screen">
+        <a href="benefits.html" target="_blank" class="bubble-button">Read More</a>
+      </div>
+    </div>
+
+   </section>
+
+   <section id="blog">
+    <h2>Blogs</h2>
+
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="coffee">Coffee</button>
+      <button class="filter-btn" data-category="juice">Juice</button>
+      <button class="filter-btn" data-category="sustainability">Sustainability</button>
+      <button class="filter-btn" data-category="dessert">Dessert</button>
+      <button class="filter-btn" data-category="snacks">snacks</button>
+
+    </div>
+
+   
+    <div class="blogs">
+      <div class="blog-card" data-category="coffee">
+        <img src="spoon.jpg" alt="pouring coffee">
+        <h3>Buna & Beyond</h3>
+        <p>The evolution of coffee culture in a fast-paced world.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="juice fashion">
+        <img src="fashion.jpg" alt="fashion and flavor">
+        <h3>Threads & Thirst</h3>
+        <p>How Ethiopian fashion and flavor intertwine.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="sustainability">
+        <img src="greee.jpg" alt="sustainability">
+        <h3>Green Sips</h3>
+        <p>Highlighting sustainable packaging and practices.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="coffee sustainability">
+        <img src="bib.jpg" alt="to-go coffee">
+        <h3>The To-Go Chronicles</h3>
+        <p>Stories and tips for busy, eco-conscious customers.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="coffee sustainability">
+        <img src="dark.jpg" alt="eco coffee">
+        <h3>Eco Meets Espresso</h3>
+        <p>Where conscience and caffeine align.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="juice">
+        <img src="smilly.jpg" alt="juice blends">
+        <h3>Juice Journeys</h3>
+        <p>Seasonal juice blends and the fruits behind them.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="coffee">
+        <img src="mor.jpg" alt="ethiopian mornings">
+        <h3>Morning With a Modern Twist</h3>
+        <p>How to start your day, Ethiopian style.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="coffee people">
+        <img src="bari.jpg" alt="farmers and artisans">
+        <h3>The Soul of the Sip</h3>
+        <p>Profiles on farmers, baristas, and artisans.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="juice coffee">
+        <img src="eng.jpg" alt="mood-based drinks">
+        <h3>The Mood Menu</h3>
+        <p>Sips that match the moment: calm, energized, refreshed.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="juice">
+        <img src="sunshine.jpg" alt="summer blends">
+        <h3>Sunshine & Spice</h3>
+        <p>Summer blends with a warming cultural kick.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="coffee sustainability">
+        <img src="mama.jpg" alt="wild herbs">
+        <h3>Barista Botanicals</h3>
+        <p>Infusing wild herbs into the wellness wave.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="coffee juice">
+        <img src="ben.jpg" alt="drinks">
+        <h3>AM to PM Pour</h3>
+        <p>What to drink from sunrise espresso to sunset smoothies.</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="dessert">
+        <img src="cak.jpg" alt="desserts">
+        <h3>Heritage in a Bite</h3>
+        <p>Desserts inspired by childhood and celebrations</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="dessert">
+        <img src="spat.jpg" alt="wild herbs">
+        <h3>From Clay Ovens to Cake Stands</h3>
+        <p>A journey through Ethiopian dessert evolution</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="dessert">
+        <img src="flav.jpg" alt="wild herbs">
+        <h3>The Flavor Calendar</h3>
+        <p>Matching desserts to Ethiopia’s harvest seasons</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="dessert">
+        <img src="spice.jpg" alt="wild herbs">
+        <h3>Spice Meets Sugar</h3>
+        <p>Using berbere, cinnamon, and cardamom in dessert form</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="dessert">
+        <img src="go.jpg" alt="wild herbs">
+        <h3>Dessert in a Dash</h3>
+        <p>Delicious to-go sweets for the busy bee</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="snacks">
+        <img src="ehu.jpg" alt="wild herbs">
+        <h3>Golden Crunch, Ethiopian Lunch</h3>
+        <p>How traditional spices elevate classic fried snacks</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="snacks">
+        <img src="lett.jpg" alt="wild herbs">
+        <h3>Pastry Meets Pulse</h3>
+        <p>Lentil-packed, veggie-stuffed, protein-rich samusa variations</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="snacks">
+        <img src="dip.jpg" alt="wild herbs">
+        <h3>Sauce & Substance</h3>
+        <p>Homemade dips with Ethiopian heat, from mitmitta mayo to berbere ketchup</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="snacks">
+        <img src="indi.jpg" alt="wild herbs">
+        <h3>Beyond the Samusa</h3>
+        <p>Comparing Ethiopia’s filled snacks to similar global bites (like Indian samosas or Latin empanadas)</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="snacks">
+        <img src="street.jpg" alt="wild herbs">
+        <h3>From Cart to Cafe</h3>
+        <p>Street food stories and how they’ve grown up into gourmet cafe offerings</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="snacks">
+        <img src="calm.jpg" alt="wild herbs">
+        <h3>Taste the Pause</h3>
+        <p>Making snack breaks soulful, not rushed</p>
+        <div class="center-screen">
+          <a href="benefits.html" class="bubble-button">Read</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+   <div id="contact" class="contact-section">
+      <h3>Contact Us</h3>
+      <div class="contact-info">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <p>Email: <a href="mailto:info@abyssiniahouse.com">info@abyssiniahouse.com</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <p>Call: <a href="tel:+251900000000">+251 900 000 000</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Addis Ababa, Ethiopia</p>
+      </div>
+      </div>
+
+
+      <div class="socials">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.telegram.com"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+      <nav class="footer-nav">
+        <a href="#featured">Featured</a>
+        <a href="#blog">Blogs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p>&copy; 2025 Abyssinia House. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("show");
+  }
+
+  const cards = document.querySelectorAll('.blog-card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  cards.forEach(card => observer.observe(card));
+
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const allCards = document.querySelectorAll('.blog-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      allCards.forEach(card => {
+        if (category === 'all' || card.dataset.category.includes(category)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
